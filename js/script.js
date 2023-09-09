@@ -12,11 +12,26 @@
 
 /*
 //MILESTONE 2: Implementazione con form in pagina
-7. Creiamo un forma HTML con due campi di input (chilometri e età) e un pulsante "Calcola."
+7. Creiamo un forma HTML con due campi di input (chilometri e età) e un pulsante 'Calcola.'
 8. Creiamo un elemento in pagina per visualizzare il risulatato.
-9. Aggiungiamo un evento al pulsante "Calcola" per eseguire il calcolo quando viene premuto.
+9. Aggiungiamo un evento al pulsante 'Calcola' per eseguire il calcolo quando viene premuto.
 10. Mostriamo il risultato in una parte dedicata della pagina, formattando il prezzo con massimo due decimali.
 11. Mostriamo anche un recap dei dati inseriti dall'utente.
 //Fine del programma
 */
 /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+// Seleziona gli elementi del DOM
+const btnGenera = document.querySelector('.generate');
+const btnAnnulla = document.querySelector('.cancel');
+const ticket = document.querySelector('.ticket');
+const nameSurnameInput = document.getElementById('name-surname');
+const distanceInput = document.getElementById('km');
+const ageInput = document.getElementById('age');
+const maggiorenneOption = document.querySelector('.adult');
+const minorenneOption = document.querySelector('.underage');
+const over65Option = document.querySelector('.over-65');
+const prezzoFinaleElement = document.querySelector('.finalPrice');
+const ticketTypeElement = document.querySelector('.tipo-di-biglietto');
+const passNameElement = document.querySelector('.nome-passeggero');
+const carrozzaElement = document.querySelector('.carrozza');
