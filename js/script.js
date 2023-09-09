@@ -75,4 +75,7 @@ btnGenera.addEventListener('click', function() {
     //Ottieni un numero casuale per la carrozza tra 1 e 10
     const carrozza = Math.floor(Math.random() * 10) +1;
 
+    //Aggiorna l'HTML con il nome e cognome, e il numero della carrozza
+    nomepasseggeroeElement.innerHTML = nameSurname;
+    carrozzaElement.innerHTML = carrozza;
 });
