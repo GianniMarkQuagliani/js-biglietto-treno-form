@@ -15,30 +15,34 @@
     <title>Biglietto del treno Form</title>
 </head>
 <body>
-    <div class="container ">
+    <div class="container debug">
         <h1>Calcola il prezzo del tuo biglietto</h1>
         <div>
-            <div>
-                <div class="card ">
-                    <p> Nome e Cognome </p>
-                    <input type="text" placeholder="" id="name-surname">
+            <div class="card-group debug">
+                <div class="card debug">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <input type="text" placeholder="" id="name-surname" class="debug">
+                    </div>
                 </div>
-                <div class="card ">
-                    <p> Km da percorrere </p>
-                    <input type="text" placeholder="" id="km">
+                <div class="card debug">
+                    <div class="card-body ">
+                        <h5 class="card-title "> Km da percorrere </h5>
+                        <input type="text" placeholder="" id="km" class="debug">
+                    </div>
                 </div>
-                <div class="card ">
-                    <p> Fascia d'età </p>
-                    <select name="options" id="age">
+                <div class="card debug">
+                    <h5 class="card-title "> Fascia d'età </h5>
+                    <select name="options" id="age" class="debug">
                         <option class="adult">Maggiorenne</option>
                         <option class="underage">Minorenne</option>
                         <option class="over-65">Over 65</option>
                     </select>
                 </div>
             </div>
-            <div>
-                <button> Genera </button>
-                <button> Anulla </button>
+            <div class="buttons debug">
+                <button type="button" class="generate debug">Genera</button>
+                <button type="button" class="cancel debug">Annulla</button>
             </div>
         </div>
     </div>

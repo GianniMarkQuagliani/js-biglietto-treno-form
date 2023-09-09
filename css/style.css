@@ -1,0 +1,30 @@
+/* Questa classe imposta un bordo di 1px di colore blu intorno agli elementi con classe "debug". */
+.debug{
+    border: 1px solid rgb(19, 3, 249);
+}
+
+/* Imposta la larghezza degli elementi con classe "card" al 30% della larghezza del loro contenitore e li allinea al centro. */
+.card{
+    width: 30%;
+    text-align: center;
+}
+
+/* Imposta il margine e l'altezza dei menu a tendina (select) all'interno del form. */
+select{
+    margin: 10px;
+    height: 25px;
+}
+
+/* Imposta la larghezza dei pulsanti nel form in modo che si adattino alla larghezza del loro contenuto, quindi sono larghi quanto il testo al loro interno. Imposta anche il margine automatico per centrarli orizzontalmente e un margine superiore di 30px per spaziatura. */
+.buttons{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Imposta la larghezza e l'altezza dei pulsanti nel form. */
+button{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
