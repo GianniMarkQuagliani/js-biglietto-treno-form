@@ -35,24 +35,38 @@ const finalPriceElement = document.querySelector('.finalPrice');
 const tipodibigliettoElement = document.querySelector('.tipo-di-biglietto');
 const nomepasseggeroeElement = document.querySelector('.nome-passeggero');
 const carrozzaElement = document.querySelector('.carrozza');
-let km;
-let age;
-let discountMessage = '';
-const priceXKm = 0.21;
-const discountYoung = 20;
-const discountSenior = 40;
 
 // Aggiungi un gestore di eventi al clic sul pulsante 'Genera'
 btnGenera.addEventListener('click', function() {
     //Ottieni i valori dai campi di input
     const nameSurname = nameSurnameInput.value;
-    km = kmInput.value;
-    age = ageInput.value;
+    const km = kmInput.value;
+    const age = ageInput.value;
 
     //Calcola il costo base del biglietto
     const total = km * 0.21;
-    let finalPrice = price;
-    finalPrice *= 1 - (discountYoung/100);
-    finalPrice *= 1 - (discountSenior/100);
+    const sconto20 = total - ((total * 20) / 100);
+    const sconto40 = total - ((total * 40) / 100);
 
-})
+    //Inizializza il prezzo finale e il tipo di biglietto
+    let finalPrice, tipodibiglietto;
+
+    //Determina il tipo di biglietto e calcola il prezzo finale
+    if (age === adultOption.value){
+        console.log('Sei Maggiorenne');
+        finalPrice = total;
+        tipodibiglietto = 'Biglietto Standard';
+    }else if (age === underageOption.value){
+        console.log('Sei Minorenne'); 
+        finalPrice = sconto20;
+        tipodibiglietto = 'Biglietto Minore'
+    }else if (age === over65Option.value){
+        console.log('Sei un over 65');
+        finalPrice = sconto40;
+        tipodibiglietto = 'Biglietto Over';
+}
+    // Aggiorna l'HTML con il prezzo finale e il tipo di biglietto
+    finalPriceElement.innerHTML = finalPrice.toFixed(2) + "&euro;";
+    tipodibigliettoElement.innerHTML = tipodibiglietto;
+
+});
