@@ -26,12 +26,22 @@ const btnGenera = document.querySelector('.generate');
 const btnAnnulla = document.querySelector('.cancel');
 const ticket = document.querySelector('.ticket');
 const nameSurnameInput = document.getElementById('name-surname');
-const distanceInput = document.getElementById('km');
+const kmInput = document.getElementById('km');
 const ageInput = document.getElementById('age');
-const maggiorenneOption = document.querySelector('.adult');
-const minorenneOption = document.querySelector('.underage');
+const adultOption = document.querySelector('.adult');
+const underageOption = document.querySelector('.underage');
 const over65Option = document.querySelector('.over-65');
-const prezzoFinaleElement = document.querySelector('.finalPrice');
-const ticketTypeElement = document.querySelector('.tipo-di-biglietto');
-const passNameElement = document.querySelector('.nome-passeggero');
+const finalPriceElement = document.querySelector('.finalPrice');
+const tipodibigliettoElement = document.querySelector('.tipo-di-biglietto');
+const nomepasseggeroeElement = document.querySelector('.nome-passeggero');
 const carrozzaElement = document.querySelector('.carrozza');
+
+// Aggiungi un gestore di eventi al clic sul pulsante 'Genera'
+btnGenera.addEventListener('click', function() {
+    //Ottieni i valori dai campi di input
+    const nameSurname = nameSurnameInput.value;
+    const km = kmInput.value;
+    const age = ageInput.value;
+
+    
+})
