@@ -69,7 +69,7 @@ btnGenera.addEventListener('click', function() {
     finalPriceElement.innerHTML = finalPrice.toFixed(2) + "&euro;";
     tipodibigliettoElement.innerHTML = tipodibiglietto;
 
-    // Arrotonda il prezzo finale a due decimali
+    //Arrotonda il prezzo finale a due decimali
     finalPrice = parseFloat(finalPrice.toFixed(2));
 
     //Ottieni un numero casuale per la carrozza tra 1 e 10
@@ -78,4 +78,13 @@ btnGenera.addEventListener('click', function() {
     //Aggiorna l'HTML con il nome e cognome, e il numero della carrozza
     nomepasseggeroeElement.innerHTML = nameSurname;
     carrozzaElement.innerHTML = carrozza;
+
+    // Mostra il biglietto
+    ticket.style.display = 'block';
+});
+
+// Aggiungi un gestore di eventi al clic sul pulsante "Annulla"
+btnAnnulla.addEventListener("click", function() {
+    // Nascondi il biglietto
+    ticket.style.display = 'none';
 });
