@@ -8,12 +8,17 @@ body{
     background-color: #b91450;
 }
 
+/* Imposta il colore di sfondo su grigio */
 .bg-grey{
     background-color: grey;
 }
+
+/* Imposta un margine sinistro di 10px */
 .mlf-10{
     margin-left: 10px;
 }
+
+/* Imposta un margine superiore di 50px */
 .mt-50{
     margin-top: 50px;
 }
@@ -52,17 +57,20 @@ button{
     margin: 10px;
 }
 
+/* Imposta lo sfondo bianco con un bordo arrotondato su .price e .ticket */
 .price, .ticket{
     background-color: white;
     border-radius: 10px;
 }
 
+/* Imposta l'altezza e il margine su .tickets */
 .tickets{
     height: 150px;
     margin: 10px;
     display: flex;
 }
 
+/* Imposta l'altezza, il bordo superiore e il bordo inferiore con larghezza dinamica su .card2 */
 .card2{
     height: 120px;
     border-top: 1px solid gray;
