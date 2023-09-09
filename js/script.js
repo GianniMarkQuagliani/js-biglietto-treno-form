@@ -35,13 +35,24 @@ const finalPriceElement = document.querySelector('.finalPrice');
 const tipodibigliettoElement = document.querySelector('.tipo-di-biglietto');
 const nomepasseggeroeElement = document.querySelector('.nome-passeggero');
 const carrozzaElement = document.querySelector('.carrozza');
+let km;
+let age;
+let discountMessage = '';
+const priceXKm = 0.21;
+const discountYoung = 20;
+const discountSenior = 40;
 
 // Aggiungi un gestore di eventi al clic sul pulsante 'Genera'
 btnGenera.addEventListener('click', function() {
     //Ottieni i valori dai campi di input
     const nameSurname = nameSurnameInput.value;
-    const km = kmInput.value;
-    const age = ageInput.value;
+    km = kmInput.value;
+    age = ageInput.value;
 
-    
+    //Calcola il costo base del biglietto
+    const total = km * 0.21;
+    let finalPrice = price;
+    finalPrice *= 1 - (discountYoung/100);
+    finalPrice *= 1 - (discountSenior/100);
+
 })
