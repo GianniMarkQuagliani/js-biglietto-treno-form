@@ -9,16 +9,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- JS -->
-    <script src="js/script.js"></script>
+    
     <!-- Title -->
     <title>Biglietto del treno Form</title>
 </head>
 <body>
-    <div class="container debug">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
-        <div>
+    <!-- Container principale -->
+    <div class="container debug ">
+        <h1 class="debug">Calcola il prezzo del tuo biglietto</h1>
+        <!-- Inizio  -->
+        <div class="justify-content-around  price">
             <div class="card-group debug">
+                <!-- Card Nome e Cognome -->
                 <div class="card debug">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -26,13 +28,16 @@
                     </div>
                 </div>
                 <div class="card debug">
+                    <!-- Card Km da percorrere -->
                     <div class="card-body ">
                         <h5 class="card-title "> Km da percorrere </h5>
                         <input type="text" placeholder="" id="km" class="debug">
                     </div>
                 </div>
                 <div class="card debug">
+                    <!-- Card Fascia d'età -->
                     <h5 class="card-title "> Fascia d'età </h5>
+                    <!-- Menu a tendina Fascia d'età -->
                     <select name="options" id="age" class="debug">
                         <option class="adult">Maggiorenne</option>
                         <option class="underage">Minorenne</option>
@@ -40,11 +45,53 @@
                     </select>
                 </div>
             </div>
+            <!-- Gruppo di pulsanti -->
             <div class="buttons debug">
+                <!-- Pulsante Genera -->
                 <button type="button" class="generate debug">Genera</button>
+                <!-- Pulsante Annulla -->
                 <button type="button" class="cancel debug">Annulla</button>
             </div>
         </div>
+        <!-- Fine  -->
+
+
+        <h1 class="debug">Dettaglio Passeggero</h1>
+        <!-- Inizio  -->
+        <div class="card-group ">
+            <div class="card">
+                <div class="card-body ">
+                    <h3 class="card-title debug">NOME PASSEGGERO</h3>
+                    <div class="debug"></div>
+                </div>
+                <div class="card debug">
+                    <div class="card-body debug">
+                        <h5>Offerta</h5>
+                        <div class="debug">Biglietto Standard</div>
+                    </div>
+                </div>
+                <div class="card debug">
+                    <div class="card-body ">
+                        <h5>Offerta</h5>
+                        <div class="debug">Biglietto Standard</div>
+                    </div>
+                </div>
+                <div class="card debug">
+                    <div class="card-body ">
+                        <h5>Offerta</h5>
+                        <div class="debug">Biglietto Standard</div>
+                    </div>
+                </div>
+                <div class="card debug">
+                    <div class="card-body debug">
+                        <h5>Offerta</h5>
+                        <div class="debug">Biglietto Standard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
