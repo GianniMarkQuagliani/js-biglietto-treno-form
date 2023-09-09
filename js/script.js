@@ -69,6 +69,9 @@ btnGenera.addEventListener('click', function() {
     finalPriceElement.innerHTML = finalPrice.toFixed(2) + "&euro;";
     tipodibigliettoElement.innerHTML = tipodibiglietto;
 
+    // Arrotonda il prezzo finale a due decimali
+    finalPrice = parseFloat(finalPrice.toFixed(2));
+
     //Ottieni un numero casuale per la carrozza tra 1 e 10
     const carrozza = Math.floor(Math.random() * 10) +1;
 
