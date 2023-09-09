@@ -8,6 +8,16 @@ body{
     background-color: #b91450;
 }
 
+.bg-grey{
+    background-color: grey;
+}
+.mlf-10{
+    margin-left: 10px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+
 /* Imposta il colore del testo, l'allineamento e il margine per gli elementi h1 */
 h1{
     color: white;
@@ -41,4 +51,23 @@ button{
     height: 30px;
     margin: 10px;
 }
+
+.price, .ticket{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tickets{
+    height: 150px;
+    margin: 10px;
+    display: flex;
+}
+
+.card2{
+    height: 120px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: calc(100% / 5);
+}
+
 
